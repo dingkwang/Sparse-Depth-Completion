@@ -1,6 +1,6 @@
 # Sparse-Depth-Completion
 
-This repo contains the implementation of our paper [Sparse and Noisy LiDAR Completion with RGB Guidance and Uncertainty](https://arxiv.org/abs/1902.05356) by [Wouter Van Gansbeke](https://github.com/wvangansbeke), Davy Neven, Bert De Brabandere and Luc Van Gool.
+This repositories contains the implementation of our paper [Sparse and Noisy LiDAR Completion with RGB Guidance and Uncertainty](http://arxiv.org/abs/1902.05356) by [Wouter Van Gansbeke](http://github.com/wvangansbeke), Davy Neven, Bert De Brabandere and Luc Van Gool.
 
 If you find this interesting or relevant to your work, consider citing:
 
@@ -20,16 +20,16 @@ If you find this interesting or relevant to your work, consider citing:
 This software is released under a creative commons license which allows for personal and research use only. For a commercial license please contact the authors. You can view a license summary [here](http://creativecommons.org/licenses/by-nc/4.0/)
 
 ## Introduction
-Monocular depth prediction methods fail to generate absolute and precise depth maps and stereoscopic approaches are still significantly outperformed by LiDAR based approaches. The goal of the depth completion task is to generate dense depth predictions from sparse and irregular point clouds. This project makes use of uncertainty to combine multiple sensor data in order to generate accurate depth predictions. Mapped lidar points together with RGB images (monococular) are used in this framework. This method holds the **1st place** entry on the [KITTI depth completion benchmark](http://www.cvlibs.net/datasets/kitti/eval_depth.php?benchmark=depth_completion) at the time of submission of the paper.
+Monocular depth prediction methods fail to generate absolute and precise depth maps and stereoscopic approaches are still significantly outperformed by LiDAR based approaches. The goal of the depth completion task is to generate dense depth predictions from sparse and irregular point clouds. This project makes use of uncertainty to combine multiple sensor data in order to generate accurate depth predictions. Mapped lidar points together with RGB images (monocular) are used in this framework. This method holds the **1st place** entry on the [KITTI depth completion benchmark](http://www.cvlibs.net/datasets/kitti/eval_depth.php?benchmark=depth_completion) at the time of the paper's submission (2019).
 
 The contribution of this paper is threefold:
 * Global and local information are combined in order to accurately complete and correct the sparse and noisy LiDAR input. Monocular RGB images are used for the guidance of this depth completion task.
 * Confidence maps are learned for the global branch and the local branch in an unsupervised manner. The predicted depth maps are weighted by their respective confidence map. This is the late fusion technique used in our framework.
 * This method ranks first on the KITTI depth completion benchmark without using additional data or postprocessing.
 
-See full demo on [YouTube](https://www.youtube.com/watch?v=Kr0W7io5rHw&feature=youtu.be). The predictions of our model for the KITTI test set can be downloaded [here](https://drive.google.com/drive/folders/1U7dvH4sC85KRVuV19fRpaMzJjE-m3D9x).
+See full demo on [YouTube](http://www.youtube.com/watch?v=Kr0W7io5rHw&feature=youtu.be). The predictions of our model for the KITTI test set can be downloaded [here](http://drive.google.com/drive/folders/1U7dvH4sC85KRVuV19fRpaMzJjE-m3D9x).
 
-![demo](https://user-images.githubusercontent.com/9694230/51806092-db766c00-2275-11e9-8de0-888bed0fc9e8.gif)
+![demo](http://user-images.githubusercontent.com/9694230/51806092-db766c00-2275-11e9-8de0-888bed0fc9e8.gif)
 
 
 ## Requirements
@@ -90,11 +90,11 @@ or
 checkout more details in the bash file.
 
 ## Trained models
-Our network architecture is based on [ERFNet](https://github.com/Eromera/erfnet_pytorch).
+Our network architecture is based on [ERFNet](http://github.com/Eromera/erfnet_pytorch).
 
-You can find the model pretrained on Cityscapes [here](https://drive.google.com/drive/folders/1U7dvH4sC85KRVuV19fRpaMzJjE-m3D9x?usp=sharing). This model is used for the global network.
+You can find the model pretrained on Cityscapes [here](http://drive.google.com/drive/folders/1U7dvH4sC85KRVuV19fRpaMzJjE-m3D9x?usp=sharing). This model is used for the global network.
 
-You can find a fully trained model and its corresponding predictions for the KITTI test set [here](https://drive.google.com/drive/folders/1U7dvH4sC85KRVuV19fRpaMzJjE-m3D9x?usp=sharing). 
+You can find a fully trained model and its corresponding predictions for the KITTI test set [here](http://drive.google.com/drive/folders/1U7dvH4sC85KRVuV19fRpaMzJjE-m3D9x?usp=sharing). 
 The RMSE is around 802 mm on the selected validation set for this model as reported in the paper. 
 
 To test it: 
@@ -110,7 +110,7 @@ and execute the following command:
 
 Comparision with state-of-the-art:
 
-![results](https://user-images.githubusercontent.com/9694230/59205060-49c32780-8ba2-11e9-8a87-34d8c3f99756.PNG)
+![results](http://user-images.githubusercontent.com/9694230/59205060-49c32780-8ba2-11e9-8a87-34d8c3f99756.PNG)
 
 
 ## Discussion
